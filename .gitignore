@@ -10,3 +10,4 @@ _ReSharper.*
 *.ReSharper.user
 *.nupkg
 
+*.v2
