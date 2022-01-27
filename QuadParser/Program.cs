@@ -7,25 +7,31 @@ namespace QuadParser
 {
     class Program
     {
+        const string inputFileName = "participants.txt";
+
         static void Main(string[] args)
         {
-            const string inputFileName = "participants.txt";
+            string[] fileLines = ReadInputFile();
+            List<Player> players = SplitIntoPlayers(fileLines);
 
+            Tournament tournament = new Quad(players);
+            tournament.WriteSectionsToTextFiles();
+        }
+
+        private static string[] ReadInputFile()
+        {
             string currentDirectory = Directory.GetCurrentDirectory();
             string inputFilePath = Path.Combine(currentDirectory, inputFileName);
 
             if (!File.Exists(inputFilePath))
             {
-                Console.WriteLine("Couldn't find participants.txt in current directory.");
+                Console.WriteLine($"Couldn't find {inputFileName} in current directory.");
                 Console.WriteLine("Press any key to exit...");
                 Console.ReadKey();
+                Environment.Exit(0);
             }
 
-            string[] fileLines = File.ReadAllLines(inputFilePath);
-            List<Player> players = SplitIntoPlayers(fileLines);
-
-            Tournament tournament = new Quad(players);
-            tournament.WriteSectionsToTextFiles();
+            return File.ReadAllLines(inputFilePath);
         }
 
         private static List<Player> SplitIntoPlayers(IReadOnlyList<string> fileLines)
