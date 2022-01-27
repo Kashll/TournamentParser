@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace TournamentParser.SectionSplitters
+namespace TournamentParser.Tournaments.SectionSplitters
 {
     public interface ISectionSplitter
     {

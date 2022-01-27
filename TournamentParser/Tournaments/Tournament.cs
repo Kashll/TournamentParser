@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using TournamentParser.SectionSplitters;
+using TournamentParser.Tournaments.SectionSplitters;
 
 namespace TournamentParser.Tournaments
 {

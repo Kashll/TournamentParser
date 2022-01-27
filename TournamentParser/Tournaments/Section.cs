@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace TournamentParser
+namespace TournamentParser.Tournaments
 {
     public class Section
     {
