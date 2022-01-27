@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using QuadParser.SectionSplitters;
+using TournamentParser.SectionSplitters;
 
-namespace QuadParser.Tournaments
+namespace TournamentParser.Tournaments
 {
     public class Quad : Tournament
     {

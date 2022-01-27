@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace QuadParser
+namespace TournamentParser
 {
     public class Section
     {

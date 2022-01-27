@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using QuadParser.SectionSplitters;
+using TournamentParser.SectionSplitters;
 
-namespace QuadParser.Tournaments
+namespace TournamentParser.Tournaments
 {
     public abstract class Tournament
     {

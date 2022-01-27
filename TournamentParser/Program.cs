@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using QuadParser.Tournaments;
+using TournamentParser.Tournaments;
 
-namespace QuadParser
+namespace TournamentParser
 {
     class Program
     {

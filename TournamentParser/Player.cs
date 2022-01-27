@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace QuadParser
+namespace TournamentParser
 {
     public class Player
     {
