@@ -3,9 +3,9 @@ using TournamentParser.Tournaments.SectionSplitters;
 
 namespace TournamentParser.Tournaments
 {
-    public class Quad : Tournament
+    public class QuadTournament : Tournament
     {
-        public Quad(IReadOnlyCollection<Player> players)
+        public QuadTournament(IReadOnlyCollection<Player> players)
             : base(players, new QuadSectionSplitter())
         {
         }

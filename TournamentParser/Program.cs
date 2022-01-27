@@ -14,7 +14,7 @@ namespace TournamentParser
             string[] fileLines = ReadInputFile();
             List<Player> players = SplitIntoPlayers(fileLines);
 
-            Tournament tournament = new Quad(players);
+            Tournament tournament = new QuadTournament(players);
             tournament.WriteSectionsToTextFiles();
         }
 
